@@ -1,0 +1,14 @@
+{
+  "spec": "test/**/*.spec.js",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "charts": false,
+    "html": true,
+    "json": true,
+    "overwrite": false,
+    "timestamp": true,
+    "cdn": true,
+    "assetsDir": "mochawesome-report/assets" 
+}
+}
+
