@@ -42,12 +42,12 @@ api:
 
 bdd:
   stage: bdd
+  services:
+    - name: selenium/standalone-chrome:latest 
   script:
-    - npm install
     - npm install mocha
     - npm install mochawesome --save-dev
-    - npm --prefix bdd install wdio
-    - npm --prefix bdd install chromedriver
+    - npm --prefix bdd webdriverio chromedriver
     - npm --prefix bdd run wdio   
 
 # post_build:
