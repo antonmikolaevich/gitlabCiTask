@@ -17,13 +17,13 @@ unit:
     - npm install mochawesome --save-dev  
     - npm run test
 
-# post_build:
-#   stage: .post
-#   script: 
-#     - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
-#   artifacts:
-#     when: always
-#     paths:
-#       - 'mochawesome-report/mochawesome.html'
-#     reports:
-#       junit: 'report/*.xml'
+post_build:
+  stage: .post
+  script: 
+    - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
+  artifacts:
+    when: always
+    paths:
+      - 'mochawesome-report/mochawesome.html'
+    reports:
+      junit: 'report/*.xml'
