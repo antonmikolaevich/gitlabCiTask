@@ -23,22 +23,23 @@ unit:
 api:
   stage: api
   script:
-    # - npm install mocha
-    # - npm install mochawesome --save-dev  
+    - npm install mocha
+    - npm install mochawesome --save-dev
+    - npm install axios
     - npm --prefix api run test
 
 ui:
   stage: ui
   script:
     - npm install mocha
-    - npm install mochawesome --save-dev  
+    - npm install mochawesome --save-dev
     - npm --prefix wdio run wdio
 
 bdd:
   stage: bdd
   script:
     - npm install mocha
-    - npm install mochawesome --save-dev  
+    - npm install mochawesome --save-dev
     - npm --prefix bdd run wdio   
 
 # post_build:
