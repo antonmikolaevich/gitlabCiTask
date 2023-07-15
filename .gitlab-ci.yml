@@ -14,13 +14,13 @@ unit:
   stage: unit
   script:
     - npm install --global mocha
+    - npm install mochawesome --save-dev  
     - npm run test
 
 post_build:
   stage: .post
   script: 
-  - npm install mochawesome --save-dev  
-  - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
+    - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
   artifacts:
     when: always
     paths:
