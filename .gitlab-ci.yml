@@ -23,8 +23,8 @@ unit:
 api:
   stage: api
   script:
-    - npm install mocha
-    - npm install mochawesome --save-dev  
+    # - npm install mocha
+    # - npm install mochawesome --save-dev  
     - npm --prefix api run test
 
 ui:
