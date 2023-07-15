@@ -1,0 +1,19 @@
+stages:
+  - build
+  - unit
+
+build:
+  stage: build
+  script:
+    - npm install
+
+unit:
+  stage: unit
+  script:
+    - npm run test
+
+post_build:
+  stage: post
+  script:
+    - junit allowEmptyResults: true, testResults: 'report/*.xml'
+    - archiveArtifacts artifacts: 'mochawesome-report/mochawesome.html'
