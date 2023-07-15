@@ -43,6 +43,7 @@ api:
 bdd:
   stage: bdd
   script:
+    - npm install
     - npm install mocha
     - npm install mochawesome --save-dev
     - npm --prefix bdd install wdio
