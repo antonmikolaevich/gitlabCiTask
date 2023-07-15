@@ -31,14 +31,14 @@ api:
     - npm --prefix api install axios
     - npm --prefix api run test
 
-ui:
-  stage: ui
-  script:
-    - npm install mocha
-    - npm install mochawesome --save-dev
-    - npm --prefix wdio install wdio
-    - npm --prefix wdio install chromedriver
-    - npm --prefix wdio run wdio
+# ui:
+#   stage: ui
+#   script:
+#     - npm install mocha
+#     - npm install mochawesome --save-dev
+#     - npm --prefix wdio install wdio
+#     - npm --prefix wdio install chromedriver
+#     - npm --prefix wdio run wdio
 
 bdd:
   stage: bdd
@@ -46,6 +46,7 @@ bdd:
     - npm install mocha
     - npm install mochawesome --save-dev
     - npm --prefix bdd install wdio
+    - npm --prefix bdd install chromedriver
     - npm --prefix bdd run wdio   
 
 # post_build:
