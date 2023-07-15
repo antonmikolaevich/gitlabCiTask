@@ -14,7 +14,7 @@ unit:
   stage: unit
   script:
     - npm install --global mocha
-    - npm install mochawesome --save-dev  
+    - npm install --global mochawesome --save-dev  
     - npm run test
 
 post_build:
