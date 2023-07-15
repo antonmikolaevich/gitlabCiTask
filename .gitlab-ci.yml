@@ -24,6 +24,6 @@ post_build:
   artifacts:
     when: always
     paths:
-      - 'mochawesome-report/mochawesome.html'
+      - mochawesome-report/mochawesome.html
     reports:
-      junit: 'report/*.xml'
+      junit: report/*.xml
