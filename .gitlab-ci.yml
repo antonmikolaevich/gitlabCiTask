@@ -15,5 +15,6 @@ unit:
 post_build:
   stage: .post
   script:
-    - junit allowEmptyResults: true, testResults: 'report/*.xml'
+    - junit allowEmptyResults: true,
+    - testResults: 'report/*.xml',
     - archiveArtifacts artifacts: 'mochawesome-report/mochawesome.html'
