@@ -20,8 +20,6 @@ unit:
 post_build:
   stage: .post
   script: 
-    - npm install --global mocha
-    - npm install mochawesome --save-dev  
     - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
   artifacts:
     when: always
