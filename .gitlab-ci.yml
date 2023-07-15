@@ -4,6 +4,9 @@ default:
 stages:
   - build
   - unit
+  - api
+  - ui
+  - bdd
 
 build:
   stage: build
@@ -16,6 +19,27 @@ unit:
     - npm install mocha
     - npm install mochawesome --save-dev  
     - npm run test
+
+api:
+  stage: api
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev  
+    - npm --prefix api run test
+
+ui:
+  stage: ui
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev  
+    - npm --prefix wdio run wdio
+
+bdd:
+  stage: bdd
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev  
+    - npm --prefix bdd run wdio   
 
 # post_build:
 #   stage: .post
