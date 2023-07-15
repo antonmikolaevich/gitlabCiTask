@@ -8,6 +8,9 @@ stages:
   - ui
   - bdd
 
+before_script: 
+  - apk add --no-cache sudo curl build-base g++ libpng libpng-dev jpeg-dev pango-dev cairo-dev giflib-dev python3 firefox
+
 build:
   stage: build
   script:
