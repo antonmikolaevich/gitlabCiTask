@@ -13,7 +13,7 @@ unit:
     - npm run test
 
 post_build:
-  stage: post
+  stage: .post
   script:
     - junit allowEmptyResults: true, testResults: 'report/*.xml'
     - archiveArtifacts artifacts: 'mochawesome-report/mochawesome.html'
