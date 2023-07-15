@@ -20,10 +20,12 @@ unit:
 post_build:
   stage: .post
   script: 
+    - npm install --global mocha
+    - npm install mochawesome --save-dev  
     - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
   artifacts:
     when: always
     paths:
-      - '/builds/yauheniya_rudzko/at-with-js/mochawesome-report/mochawesome.html'
+      - 'mochawesome-report/mochawesome.html'
     reports:
       junit: 'report/*.xml'
