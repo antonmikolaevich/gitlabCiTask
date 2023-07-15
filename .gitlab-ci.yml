@@ -18,10 +18,11 @@ unit:
 
 post_build:
   stage: .post
-  script:
-    - mocha --reporter mocha-junit-reporter --reporter-options mochaFile=junit.xml
+  script: 
+  - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
   artifacts:
     when: always
+    paths:
+      - 'mochawesome-report/mochawesome.html'
     reports:
-      junit:
-        - junit.xml
+      junit: 'report/*.xml'
