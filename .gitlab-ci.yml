@@ -45,10 +45,10 @@ bdd:
   services:
     - name: selenium/standalone-chrome:latest 
   script:
-    - npm install mocha
-    - npm install mochawesome --save-dev
-    - npm --prefix bdd install webdriverio
-    - npm --prefix bdd install chromedriver
+    # - npm install mocha
+    # - npm install mochawesome --save-dev
+    # - npm --prefix bdd install webdriverio
+    # - npm --prefix bdd install chromedriver
     - npm --prefix bdd run wdio   
 
 # post_build:
