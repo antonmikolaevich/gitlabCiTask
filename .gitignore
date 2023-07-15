@@ -1,6 +1,5 @@
 node_modules
 coverage
-mochawesome-report
 wdio/artifacts
 wdio/report
 wdio/allure-report
