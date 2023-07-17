@@ -63,7 +63,7 @@ exports.config = {
     // eslint-disable-next-line quote-props
     browserName: 'firefox',
     'moz:firefoxOptions': {
-      args: ['--headless', '--disable-gpu'],
+      args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080'],
     },
   },
   ],
@@ -266,21 +266,21 @@ exports.config = {
       await browser.saveScreenshot(dirPath + filename);
     }
   },
-  onComplete: function() {
-    const reportError = new Error('Could not generate Allure report');
-    const generation = allure(['generate', 'allure-results', '--clean']);
-    return new Promise((resolve, reject) => {
-      const generationTimeout = setTimeout(() => reject(reportError), 5000);
-      generation.on('exit', function(exitCode) {
-        clearTimeout(generationTimeout);
-        if (exitCode !== 0) {
-          return reject(reportError);
-        }
-        console.log('Allure report successfully generated');
-        resolve();
-      });
-    });
-  },
+  // onComplete: function() {
+  //   const reportError = new Error('Could not generate Allure report');
+  //   const generation = allure(['generate', 'allure-results', '--clean']);
+  //   return new Promise((resolve, reject) => {
+  //     const generationTimeout = setTimeout(() => reject(reportError), 5000);
+  //     generation.on('exit', function(exitCode) {
+  //       clearTimeout(generationTimeout);
+  //       if (exitCode !== 0) {
+  //         return reject(reportError);
+  //       }
+  //       console.log('Allure report successfully generated');
+  //       resolve();
+  //     });
+  //   });
+  // },
 
   /**
      * Hook that gets executed after the suite has ended

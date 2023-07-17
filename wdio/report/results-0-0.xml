@@ -1,96 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Task 3 test suite" timestamp="2023-07-17T18:18:47" time="15.47" tests="4" failures="2" errors="2" skipped="0">
+  <testsuite name="Task 3 test suite" timestamp="2023-07-17T19:31:21" time="26.655" tests="4" failures="3" errors="3" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Task 3 test suite"/>
       <property name="capabilities" value="firefox.115_0_2.windows"/>
       <property name="file" value="file:///D:/JS%20Mentoring%20Program%20Mentee/Yauheniya_Rudzko_Automation_Program_Basic/at-with-js/wdio/test/specs/advancedCommands.spec.js"/>
     </properties>
-    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="Execute change color of the button text" time="4.122">
-      <system-out><![CDATA[
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
-RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"xpath","value":"//*[text()=\"Add New Doctor\"]"}
-RESULT: {"using":"xpath","value":"//*[text()=\"Add New Doctor\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/execute/sync - {"script":"return (function(button) {\r\n      button.style.color='#ad2019';\r\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3d66d503-c20f-473c-979a-000fcbfeefd9","ELEMENT":"3d66d503-c20f-473c-979a-000fcbfeefd9"}]}
-RESULT: {"script":"return (function(button) {\r\n      button.style.color='#ad2019';\r\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3d66d503-c20f-473c-979a-000fcbfeefd9","ELEMENT":"3d66d503-c20f-473c-979a-000fcbfeefd9"}]}
-]]></system-out>
-    </testcase>
-    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="waitUntil explore guru99" time="2.209">
+    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="Execute change color of the button text" time="1.273">
       <failure/>
-      <error message="Element &lt;input class=&quot;search-field&quot; name=&quot;s&quot; type=&quot;search&quot;> could not be scrolled into view"/>
+      <error message="The element with selector &quot;//*[text()=&quot;Add New Doctor&quot;]&quot; you are trying to pass into the execute method wasn't found"/>
       <system-out><![CDATA[
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/url - {"url":"https://www.guru99.com/"}
-RESULT: {"url":"https://www.guru99.com/"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"xpath","value":"//button[@aria-label=\"View Search Form\"]"}
-RESULT: {"using":"xpath","value":"//button[@aria-label=\"View Search Form\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/f03f407d-ec42-49ef-8363-061a34f67319/click - {}
-RESULT: {}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"css selector","value":"input[type=\"Search\"]"}
-RESULT: {"using":"css selector","value":"input[type=\"Search\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/22f46bfc-6839-4100-a611-59cd173fc13d/clear - {}
-COMMAND: GET /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/screenshot - {}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"xpath","value":"//*[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Doctor\"]"}
+COMMAND: GET /session/25c84d0a-0059-4156-a654-7a832e766702/screenshot - {}
 RESULT: {}
 ]]></system-out>
       <system-err><![CDATA[
-element not interactable: Element <input class="search-field" name="s" type="search"> could not be scrolled into view
+Error: The element with selector "//*[text()="Add New Doctor"]" you are trying to pass into the execute method wasn't found
+    at Array.map (<anonymous>)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\advancedCommands.spec.js:15:5)
+    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\advancedCommands.spec.js:8:5)
 ]]></system-err>
     </testcase>
-    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="Actions double click an appointment" time="2.633">
+    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="waitUntil explore guru99" time="9.173">
       <system-out><![CDATA[
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
-RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
-RESULT: {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/actions - {}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/url - {"url":"https://www.guru99.com/"}
+RESULT: {"url":"https://www.guru99.com/"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"xpath","value":"//button[@aria-label=\"View Search Form\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"View Search Form\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element/4fc4af03-abf5-4e6e-b458-23683b3f004f/click - {}
 RESULT: {}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"xpath","value":"//div[text()=\"Edit Appointment\"]"}
-RESULT: {"using":"xpath","value":"//div[text()=\"Edit Appointment\"]"}
-COMMAND: GET /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/43dae144-44a9-488e-9a20-9b99b942139a/displayed - {}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"css selector","value":"input[type=\"Search\"]"}
+RESULT: {"using":"css selector","value":"input[type=\"Search\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element/976ee5cc-208c-426a-95d5-41dd12340146/clear - {}
+RESULT: {}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element/976ee5cc-208c-426a-95d5-41dd12340146/value - {"text":"sql"}
+RESULT: {"text":"sql"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"css selector","value":"input[value=\"Search\"]"}
+RESULT: {"using":"css selector","value":"input[value=\"Search\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element/983757d0-75b8-4b00-bacd-80cc86eb06af/click - {}
+RESULT: {}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"css selector","value":"h1[class=\"entry-title\"]"}
+RESULT: {"using":"css selector","value":"h1[class=\"entry-title\"]"}
+COMMAND: GET /session/25c84d0a-0059-4156-a654-7a832e766702/element/661a7a45-f9a0-4a26-b99a-1cd1ba8153ef/text - {}
+RESULT: {}
+COMMAND: GET /session/25c84d0a-0059-4156-a654-7a832e766702/url - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="Clear cookies" time="6.492">
+    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="Actions double click an appointment" time="10.339">
       <failure/>
-      <error message="Element &lt;input class=&quot;waybox-button&quot; name=&quot;AUTH_ACTION&quot; type=&quot;submit&quot;> could not be scrolled into view"/>
+      <error message="Can't call doubleClick on element with selector &quot;div[data-id=&quot;Appointment_1002&quot;]&quot; because element wasn't found"/>
       <system-out><![CDATA[
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/url - {"url":"https://dpm.by/auth/"}
-RESULT: {"url":"https://dpm.by/auth/"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_LOGIN\"]"}
-RESULT: {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_LOGIN\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/984b38a2-071e-48b9-9296-5abb1ce67e8a/clear - {}
-RESULT: {}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/984b38a2-071e-48b9-9296-5abb1ce67e8a/value - {"text":"3388100"}
-RESULT: {"text":"3388100"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_PASSWORD\"]"}
-RESULT: {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_PASSWORD\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/9ff3200d-6684-4278-a0af-82f4ae2b7821/clear - {}
-RESULT: {}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/9ff3200d-6684-4278-a0af-82f4ae2b7821/value - {"text":"haVv5pen"}
-RESULT: {"text":"haVv5pen"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element - {"using":"xpath","value":"//*[@name=\"AUTH_ACTION\"]"}
-RESULT: {"using":"xpath","value":"//*[@name=\"AUTH_ACTION\"]"}
-COMMAND: POST /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/element/f6f11786-c218-4e7b-b7ee-c5ccb068cf3c/click - {}
-COMMAND: GET /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0/screenshot - {}
-RESULT: {}
-COMMAND: DELETE /session/c2ddf6b8-9f40-4d82-8f96-08fe88b5e9f0 - {}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/elements - {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"css selector","value":"div[data-id=\"Appointment_1002\"]"}
+COMMAND: GET /session/25c84d0a-0059-4156-a654-7a832e766702/screenshot - {}
 RESULT: {}
 ]]></system-out>
       <system-err><![CDATA[
-element not interactable: Element <input class="waybox-button" name="AUTH_ACTION" type="submit"> could not be scrolled into view
+Error: Can't call doubleClick on element with selector "div[data-id="Appointment_1002"]" because element wasn't found
+    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\advancedCommands.spec.js:25:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_3_test_suite" name="Clear cookies" time="5.853">
+      <failure/>
+      <error message="Element &lt;input class=&quot;window__input&quot; name=&quot;USER_PASSWORD&quot; type=&quot;password&quot;> could not be scrolled into view"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/url - {"url":"https://dpm.by/auth/"}
+RESULT: {"url":"https://dpm.by/auth/"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_LOGIN\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_LOGIN\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element/a0ecaa98-c615-4719-9b0b-988ebc969c4b/clear - {}
+RESULT: {}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element/a0ecaa98-c615-4719-9b0b-988ebc969c4b/value - {"text":"3388100"}
+RESULT: {"text":"3388100"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element - {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_PASSWORD\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"window__block\"]/input[@name=\"USER_PASSWORD\"]"}
+COMMAND: POST /session/25c84d0a-0059-4156-a654-7a832e766702/element/a21e8670-7f4f-4094-80f8-272efb1938e4/clear - {}
+COMMAND: GET /session/25c84d0a-0059-4156-a654-7a832e766702/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/25c84d0a-0059-4156-a654-7a832e766702 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+element not interactable: Element <input class="window__input" name="USER_PASSWORD" type="password"> could not be scrolled into view
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\advancedCommands.spec.js:33:5)
+    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\advancedCommands.spec.js:32:5)
 ]]></system-err>
     </testcase>
   </testsuite>

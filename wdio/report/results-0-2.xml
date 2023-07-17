@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Task 1 test suite" timestamp="2023-07-17T19:32:42" time="31.201" tests="4" failures="4" errors="4" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Task 1 test suite"/>
+      <property name="capabilities" value="firefox.115_0_2.windows"/>
+      <property name="file" value="file:///D:/JS%20Mentoring%20Program%20Mentee/Yauheniya_Rudzko_Automation_Program_Basic/at-with-js/wdio/test/specs/webdriverIO.spec.js"/>
+    </properties>
+    <testcase classname="firefox.115_0_2.windows.Task_1_test_suite" name="Verify the dashboard page title" time="0.98">
+      <failure/>
+      <error message="expect(received).toEqual(expected) // deep equality&#xA;&#xA;Expected: &quot;Appointment Planner - Syncfusion Angular Components Showcase App&quot;&#xA;Received: &quot;ERROR: The request could not be satisfied&quot;"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: GET /session/95489306-8b3d-49f3-825e-bcd9383b33eb/title - {}
+RESULT: {}
+COMMAND: GET /session/95489306-8b3d-49f3-825e-bcd9383b33eb/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: "Appointment Planner - Syncfusion Angular Components Showcase App"
+Received: "ERROR: The request could not be satisfied"
+    at Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\webdriverIO.spec.js:9:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_1_test_suite" name="Show an error for an empty doctor email" time="10.099">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;div.doctors&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/element - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.doctors"}
+COMMAND: GET /session/95489306-8b3d-49f3-825e-bcd9383b33eb/screenshot - {}
+RESULT: {"using":"css selector","value":"div.doctors"}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "div.doctors" because element wasn't found
+    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\webdriverIO.spec.js:13:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_1_test_suite" name="Search for a patient" time="10.05">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;div.patients&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/element - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"css selector","value":"div.patients"}
+RESULT: {"using":"css selector","value":"div.patients"}
+COMMAND: GET /session/95489306-8b3d-49f3-825e-bcd9383b33eb/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "div.patients" because element wasn't found
+    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\webdriverIO.spec.js:22:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_1_test_suite" name="Add a new patient" time="10.056">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;//*[text()=&quot;Add New Patient&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/patients"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/patients"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/element - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: POST /session/95489306-8b3d-49f3-825e-bcd9383b33eb/elements - {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Add New Patient\"]"}
+COMMAND: GET /session/95489306-8b3d-49f3-825e-bcd9383b33eb/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/95489306-8b3d-49f3-825e-bcd9383b33eb - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "//*[text()="Add New Patient"]" because element wasn't found
+    at async Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\webdriverIO.spec.js:42:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
