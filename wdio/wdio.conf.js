@@ -60,8 +60,13 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [{
+    // eslint-disable-next-line quote-props
     browserName: 'firefox',
-  }],
+    'moz:firefoxOptions': {
+      args: ['--headless', '--disable-gpu'],
+    },
+  },
+  ],
   //
   // ===================
   // Test Configurations
