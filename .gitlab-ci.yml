@@ -41,19 +41,19 @@ api:
     expire_in: 3 days
     when: always  
 
-ui:
-  stage: ui
-  script:
-    - npm install mocha
-    - npm install mochawesome --save-dev
-    - npm --prefix wdio install wdio
-    - npm --prefix wdio install chromedriver
-    - npm --prefix wdio run wdio
-    artifacts:
-      paths:
-       - wdio/allure-report/  
-     expire_in: 3 days
-     when: always
+# ui:
+#   stage: ui
+#   script:
+#     - npm install mocha
+#     - npm install mochawesome --save-dev
+#     - npm --prefix wdio install wdio
+#     - npm --prefix wdio install chromedriver
+#     - npm --prefix wdio run wdio
+#     artifacts:
+#       paths:
+#        - wdio/allure-report/  
+#      expire_in: 3 days
+#      when: always
 
 
 # bdd:
