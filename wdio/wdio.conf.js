@@ -4,7 +4,6 @@ const {
   existsSync,
   mkdirSync,
 } = require('fs');
-const allure = require('allure-commandline');
 exports.config = {
   //
   // ====================
