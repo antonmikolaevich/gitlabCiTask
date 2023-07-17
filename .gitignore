@@ -1,6 +1,5 @@
 node_modules
 coverage
 wdio/artifacts
-wdio/report
 wdio/allure-report
 wdio/allure-results
