@@ -62,8 +62,8 @@ post_build:
     - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
   artifacts:
     when: always
-#    paths:
-#      - mochawesome-report/mochawesome.html
+    paths:
+      - mochawesome-report/mochawesome.html
     reports:
       junit: 
-      - target/report/*.xml
+      - target/wdio/report/*.xml
