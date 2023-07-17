@@ -40,24 +40,26 @@ api:
 #     - npm --prefix wdio install chromedriver
 #     - npm --prefix wdio run wdio
 
-bdd:
-  stage: bdd
-  services:
-    - selenium/standalone-chrome
-  script:
+# bdd:
+#   stage: bdd
+#   services:
+#     - selenium/standalone-chrome
+#   script:
+#     - npm install mocha
+#     - npm install mochawesome --save-dev
+#     - npm --prefix bdd install webdriverio
+#     - npm --prefix bdd install chromedriver
+#     - npm --prefix bdd run wdio --host=selenium/standalone-chrome:latest
+
+post_build:
+  stage: .post
+  script: 
     - npm install mocha
     - npm install mochawesome --save-dev
-    - npm --prefix bdd install webdriverio
-    - npm --prefix bdd install chromedriver
-    - npm --prefix bdd run wdio --host=selenium/standalone-chrome:latest
-
-# post_build:
-#   stage: .post
-#   script: 
-#     - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
-#   artifacts:
-#     when: always
-#     paths:
-#       - mochawesome-report/mochawesome.html
-#     reports:
-#       junit: report/*.xml
+    - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
+  artifacts:
+    when: always
+    paths:
+      - mochawesome-report/mochawesome.html
+    reports:
+      junit: report/*.xml
