@@ -44,7 +44,6 @@ build:
 ui:
   stage: ui
   script:
-    - cd wdio
     - npm install mocha
     - npm install mochawesome --save-dev
     - npm --prefix wdio install wdio
