@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Task 2 test suite" timestamp="2023-07-17T14:06:37" time="31.434" tests="4" failures="4" errors="4" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Task 2 test suite"/>
+      <property name="capabilities" value="firefox.115_0_2.windows"/>
+      <property name="file" value="file:///D:/JS%20Mentoring%20Program%20Mentee/Yauheniya_Rudzko_Automation_Program_Basic/at-with-js/wdio/test/specs/basicCommands.spec.js"/>
+    </properties>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Show and hide pop ups" time="11.218">
+      <failure/>
+      <error message="Expect $(`//div[text()=&quot; Are you sure you want to delete this patient? &quot;]`) to exist&#xA;&#xA;Expected: &quot;exist&quot;&#xA;Received: &quot;not exist&quot;"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/patients"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/patients"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/element - {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+RESULT: {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/element - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+RESULT: {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: GET /session/8965a401-b28e-4f7d-a625-37bd46a9355b/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Expect $(`//div[text()=" Are you sure you want to delete this patient? "]`) to exist
+
+Expected: "exist"
+Received: "not exist"
+    at Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\basicCommands.spec.js:16:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Display email error when invalid email is entered" time="10.065">
+      <failure/>
+      <error message="element (&quot;//button[text()=&quot;Add New Doctor&quot;]&quot;) still not existing after 10000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/element - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: GET /session/8965a401-b28e-4f7d-a625-37bd46a9355b/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//button[text()="Add New Doctor"]") still not existing after 10000ms
+    at async Browser.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\basicCommands.spec.js:5:3)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Display quick appointment info" time="10.077">
+      <failure/>
+      <error message="element (&quot;//div[@data-id=&quot;Appointment_1002&quot;]&quot;) still not existing after 10000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/element - {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/element - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: GET /session/8965a401-b28e-4f7d-a625-37bd46a9355b/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//div[@data-id="Appointment_1002"]") still not existing after 10000ms
+    at async Browser.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\basicCommands.spec.js:5:3)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Count number of doctors" time="0.063">
+      <failure/>
+      <error message="expect(received).toEqual(expected) // deep equality&#xA;&#xA;Expected: 7&#xA;Received: 0"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+COMMAND: POST /session/8965a401-b28e-4f7d-a625-37bd46a9355b/elements - {"using":"css selector","value":"div[class=\"specialist-display\"] div[class=\"e-cards specialist-item\"]"}
+RESULT: {"using":"css selector","value":"div[class=\"specialist-display\"] div[class=\"e-cards specialist-item\"]"}
+COMMAND: GET /session/8965a401-b28e-4f7d-a625-37bd46a9355b/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/8965a401-b28e-4f7d-a625-37bd46a9355b - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 7
+Received: 0
+    at Context.<anonymous> (D:\JS Mentoring Program Mentee\Yauheniya_Rudzko_Automation_Program_Basic\at-with-js\wdio\test\specs\basicCommands.spec.js:52:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

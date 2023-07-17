@@ -30,7 +30,7 @@ exports.config = {
   // will be called from there.
   //
   specs: [
-    'C:/data/temp/at-with-js/wdio/test/specs/*.js',
+    'test/specs/*.js',
     // ToDo: define location for spec files here
   ],
   // Patterns to exclude.
