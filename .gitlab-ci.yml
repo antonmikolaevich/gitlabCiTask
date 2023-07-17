@@ -51,6 +51,7 @@ api:
 #     - npm --prefix bdd install chromedriver
 #     - npm --prefix bdd run wdio --host=selenium/standalone-chrome:latest
 
+
 post_build:
   stage: .post
   script: 
