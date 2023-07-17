@@ -53,11 +53,7 @@ ui:
      paths:
        - wdio/allure-report/  
      expire_in: 3 days
-     when: always 
-     paths:
-       - wdio/report/  
-     expire_in: 3 days
-     when: always 
+     when: always
 
 
 # bdd:
