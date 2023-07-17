@@ -43,14 +43,12 @@ build:
 
 ui:
   stage: ui
-  services:
-    - selenium/standalone-chrome
   script:
     - npm install mocha
     - npm install mochawesome --save-dev
     - npm --prefix wdio install wdio
     - npm --prefix wdio install chromedriver
-    - npm --prefix wdio run wdio --host=selenium__standalone-chrome
+    - npm --prefix wdio run wdio
     # artifacts:
     #   paths:
     #    - wdio/allure-report/  
