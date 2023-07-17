@@ -44,7 +44,7 @@ build:
 ui:
   stage: ui
   services:
-    - name: selenium/standalone-chrome:latest
+    - selenium/standalone-chrome
   script:
     - npm install mocha
     - npm install mochawesome --save-dev
