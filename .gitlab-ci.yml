@@ -16,12 +16,17 @@ build:
   script:
     - npm install
 
-# unit:
-#   stage: unit
-#   script:
-#     - npm install mocha
-#     - npm install mochawesome --save-dev  
-#     - npm run test
+unit:
+  stage: unit
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev  
+    - npm run test
+  artifacts:
+    paths:
+      - mochawesome-report/  
+    expire_in: 3 days
+    when: always   
 
 api:
   stage: api
