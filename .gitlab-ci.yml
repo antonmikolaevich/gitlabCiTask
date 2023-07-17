@@ -48,6 +48,7 @@ ui:
     - npm install mochawesome --save-dev
     - npm --prefix wdio install wdio
     - npm --prefix wdio install chromedriver
+    - cd wdio
     - npm --prefix wdio run wdio
     # artifacts:
     #   paths:
