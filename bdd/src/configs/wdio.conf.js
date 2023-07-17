@@ -52,9 +52,13 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [{
-    // capabilities for local browser web tests
-    browserName: 'chrome', // or "firefox", "microsoftedge", "safari"
-  }],
+    // eslint-disable-next-line quote-props
+    browserName: 'firefox',
+    'moz:firefoxOptions': {
+      args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080'],
+    },
+  },
+  ],
   //
   // ===================
   // Test Configurations
