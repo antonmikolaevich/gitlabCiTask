@@ -40,6 +40,7 @@ api:
 #     - npm --prefix wdio install chromedriver
 #     - npm --prefix wdio run wdio
 
+
 # bdd:
 #   stage: bdd
 #   services:
@@ -52,9 +53,10 @@ api:
 #     - npm --prefix bdd run wdio --host=selenium/standalone-chrome:latest
 
 
+
 post_build:
   stage: .post
-    script: 
+  script: 
     - npm install mocha
     - npm install mochawesome --save-dev
     - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
