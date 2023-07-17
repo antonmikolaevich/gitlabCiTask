@@ -56,14 +56,7 @@ api:
 
 post_build:
   stage: .post
-  script: 
-    - npm install mocha
-    - npm install mochawesome --save-dev
-    - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
   artifacts:
     when: always
     paths:
-      - mochawesome-report/mochawesome.html
-    reports:
-      junit: 
-      - target/wdio/report/*.xml
+      - api/mochawesome-report/
