@@ -16,30 +16,30 @@ build:
   script:
     - npm install
 
-# unit:
-#   stage: unit
-#   script:
-#     - npm install mocha
-#     - npm install mochawesome --save-dev  
-#     - npm run test
-#   artifacts:
-#     paths:
-#       - mochawesome-report/  
-#     expire_in: 3 days
-#     when: always   
+unit:
+  stage: unit
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev  
+    - npm run test
+  artifacts:
+    paths:
+      - mochawesome-report/  
+    expire_in: 3 days
+    when: always   
 
-# api:
-#   stage: api
-#   script:
-#     - npm install mocha
-#     - npm install mochawesome --save-dev
-#     - npm --prefix api install axios
-#     - npm --prefix api run test
-#   artifacts:
-#     paths:
-#       - api/mochawesome-report/  
-#     expire_in: 3 days
-#     when: always  
+api:
+  stage: api
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev
+    - npm --prefix api install axios
+    - npm --prefix api run test
+  artifacts:
+    paths:
+      - api/mochawesome-report/  
+    expire_in: 3 days
+    when: always  
 
 ui:
   stage: ui
@@ -48,21 +48,18 @@ ui:
     - npm install mochawesome --save-dev
     - npm --prefix wdio install wdio
     - npm --prefix wdio run wdio
-    # artifacts:
-    #   paths:
-    #    - wdio/allure-report/  
-    #  expire_in: 3 days
-    #  when: always
+    artifacts:
+      paths:
+       - wdio/allure-report/  
+     expire_in: 3 days
+     when: always
 
 
-# bdd:
-#   stage: bdd
-#   services:
-#     - name: selenium/standalone-chrome:latest
- #     - name: selenium/standalone-firefox:latest
-#   script:
-#     - npm install mocha
-#     - npm install mochawesome --save-dev
-#     - npm --prefix bdd install webdriverio
-#     - npm --prefix bdd install chromedriver
-#     - npm --prefix bdd run wdio --host=selenium/standalone-chrome:latest
+bdd:
+  stage: bdd
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev
+    - npm --prefix bdd install webdriverio
+    - npm --prefix bdd install chromedriver
+    - npm --prefix bdd run wdio
