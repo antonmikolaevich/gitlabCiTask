@@ -52,9 +52,13 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [{
-    // capabilities for local browser web tests
-    browserName: 'chrome', // or "firefox", "microsoftedge", "safari"
-  }],
+    // eslint-disable-next-line quote-props
+    browserName: 'firefox',
+    'moz:firefoxOptions': {
+      args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080'],
+    },
+  },
+  ],
   //
   // ===================
   // Test Configurations
@@ -102,7 +106,7 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ['chromedriver'],
+  services: ['geckodriver'],
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
   // see also: https://webdriver.io/docs/frameworks

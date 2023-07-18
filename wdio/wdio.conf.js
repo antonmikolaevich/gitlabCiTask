@@ -4,7 +4,6 @@ const {
   existsSync,
   mkdirSync,
 } = require('fs');
-const allure = require('allure-commandline');
 exports.config = {
   //
   // ====================
@@ -30,7 +29,7 @@ exports.config = {
   // will be called from there.
   //
   specs: [
-    'C:/data/temp/at-with-js/wdio/test/specs/*.js',
+    'test/specs/*.js',
     // ToDo: define location for spec files here
   ],
   // Patterns to exclude.
@@ -60,13 +59,13 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [{
-    // capabilities for local browser web tests
-    browserName: 'chrome',
-    acceptInsecureCerts: true, // or "firefox", "microsoftedge", "safari"
-  },
-  {
+    // eslint-disable-next-line quote-props
     browserName: 'firefox',
-  }],
+    'moz:firefoxOptions': {
+      args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080'],
+    },
+  },
+  ],
   //
   // ===================
   // Test Configurations
@@ -114,7 +113,7 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ['chromedriver', 'geckodriver'],
+  services: ['geckodriver'],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
@@ -266,21 +265,21 @@ exports.config = {
       await browser.saveScreenshot(dirPath + filename);
     }
   },
-  onComplete: function() {
-    const reportError = new Error('Could not generate Allure report');
-    const generation = allure(['generate', 'allure-results', '--clean']);
-    return new Promise((resolve, reject) => {
-      const generationTimeout = setTimeout(() => reject(reportError), 5000);
-      generation.on('exit', function(exitCode) {
-        clearTimeout(generationTimeout);
-        if (exitCode !== 0) {
-          return reject(reportError);
-        }
-        console.log('Allure report successfully generated');
-        resolve();
-      });
-    });
-  },
+  // onComplete: function() {
+  //   const reportError = new Error('Could not generate Allure report');
+  //   const generation = allure(['generate', 'allure-results', '--clean']);
+  //   return new Promise((resolve, reject) => {
+  //     const generationTimeout = setTimeout(() => reject(reportError), 5000);
+  //     generation.on('exit', function(exitCode) {
+  //       clearTimeout(generationTimeout);
+  //       if (exitCode !== 0) {
+  //         return reject(reportError);
+  //       }
+  //       console.log('Allure report successfully generated');
+  //       resolve();
+  //     });
+  //   });
+  // },
 
   /**
      * Hook that gets executed after the suite has ended

@@ -22,6 +22,11 @@ unit:
     - npm install mocha
     - npm install mochawesome --save-dev  
     - npm run test
+  artifacts:
+    paths:
+      - mochawesome-report/  
+    expire_in: 3 days
+    when: always   
 
 api:
   stage: api
@@ -30,40 +35,35 @@ api:
     - npm install mochawesome --save-dev
     - npm --prefix api install axios
     - npm --prefix api run test
+  artifacts:
+    paths:
+      - api/mochawesome-report/  
+    expire_in: 3 days
+    when: always  
 
-# ui:
-#   stage: ui
-#   script:
-#     - npm install mocha
-#     - npm install mochawesome --save-dev
-#     - npm --prefix wdio install wdio
-#     - npm --prefix wdio install chromedriver
-#     - npm --prefix wdio run wdio
-
-
-# bdd:
-#   stage: bdd
-#   services:
-#     - selenium/standalone-chrome
-#   script:
-#     - npm install mocha
-#     - npm install mochawesome --save-dev
-#     - npm --prefix bdd install webdriverio
-#     - npm --prefix bdd install chromedriver
-#     - npm --prefix bdd run wdio --host=selenium/standalone-chrome:latest
-
-
-
-post_build:
-  stage: .post
-  script: 
+ui:
+  stage: ui
+  script:
     - npm install mocha
     - npm install mochawesome --save-dev
-    - mocha --reporter mochawesome --reporter-options mochaFile=junit.xml
-  artifacts:
-    when: always
-    paths:
-      - mochawesome-report/mochawesome.html
-    reports:
-      junit: 
-      - target/wdio/report/*.xml
+    - npm --prefix wdio install wdio
+    - npm --prefix wdio run wdio
+    # artifacts:
+    #   paths:
+    #    - wdio/allure-report/  
+    #  expire_in: 3 days
+    #  when: always
+
+
+bdd:
+  stage: bdd
+  script:
+    - npm install mocha
+    - npm install mochawesome --save-dev
+    - npm --prefix bdd install wdio
+    - npm --prefix bdd run wdio
+  # artifacts:
+  #   paths:
+  #     - bdd/mochawesome-report/  
+  #   expire_in: 3 days
+  #   when: always    

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Task 2 test suite" timestamp="2023-07-18T10:12:20" time="3.87" tests="4" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Task 2 test suite"/>
+      <property name="capabilities" value="firefox.115_0_2.windows"/>
+      <property name="file" value="file:///C:/data/temp/at-with-js/wdio/test/specs/basicCommands.spec.js"/>
+    </properties>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Show and hide pop ups" time="2.286">
+      <system-out><![CDATA[
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/patients"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/patients"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+RESULT: {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+RESULT: {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+RESULT: {"using":"xpath","value":"//div[text()=\" Are you sure you want to delete this patient? \"]"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/cb974c79-62b6-4861-ac1a-cb307768fbc5/displayed - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//span[text()=\"Laura\"]"}
+RESULT: {"using":"xpath","value":"//span[text()=\"Laura\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//span[text()=\"Laura\"]"}
+RESULT: {"using":"xpath","value":"//span[text()=\"Laura\"]"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/d6c5cef6-a23d-4a72-b33e-49ee913f150e/displayed - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/d6c5cef6-a23d-4a72-b33e-49ee913f150e/click - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+RESULT: {"using":"xpath","value":"//*[@aria-label=\"Dialog edit\"]"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/c48def12-70d2-439e-9a4b-fdc7f472a86a/displayed - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//*[@id=\"delete\"]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"delete\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//*[@id=\"delete\"]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"delete\"]"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/6f699ad0-9d95-4723-b9b5-bf579a4cb748/displayed - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/6f699ad0-9d95-4723-b9b5-bf579a4cb748/click - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/cb974c79-62b6-4861-ac1a-cb307768fbc5/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Display email error when invalid email is entered" time="0.646">
+      <system-out><![CDATA[
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Doctor\"]"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/9b28a9b3-8926-4b88-8994-cf1f03649025/displayed - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/9b28a9b3-8926-4b88-8994-cf1f03649025/click - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"css selector","value":"input[name=\"Email\"]"}
+RESULT: {"using":"css selector","value":"input[name=\"Email\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/cde8a251-85a2-4f46-b598-80341bfeafad/clear - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/cde8a251-85a2-4f46-b598-80341bfeafad/value - {"text":"test@"}
+RESULT: {"text":"test@"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"css selector","value":".button-container button.e-primary"}
+RESULT: {"using":"css selector","value":".button-container button.e-primary"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/47315f8b-ba2f-42f4-b4a1-53de15c0df03/click - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"css selector","value":"label#Email-info"}
+RESULT: {"using":"css selector","value":"label#Email-info"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/c36f5a4f-04aa-4ec8-a6f5-dfc8327b2f2e/displayed - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"css selector","value":"input[name=\"Email\"]"}
+RESULT: {"using":"css selector","value":"input[name=\"Email\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/cde8a251-85a2-4f46-b598-80341bfeafad/value - {"text":"gmail.com"}
+RESULT: {"text":"gmail.com"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/c36f5a4f-04aa-4ec8-a6f5-dfc8327b2f2e/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Display quick appointment info" time="0.89">
+      <system-out><![CDATA[
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/calendar"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+RESULT: {"using":"xpath","value":"//div[@data-id=\"Appointment_1002\"]"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/2db8ba68-fd2b-458d-9ebc-a2e1ddcf7ee3/displayed - {}
+RESULT: {}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element/2db8ba68-fd2b-458d-9ebc-a2e1ddcf7ee3/click - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/element - {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"e-event-popup\"]"}
+COMMAND: GET /session/2a411a02-69ab-4519-b665-79bf808f339a/element/0b4db14d-104d-41a8-a30b-e134132e797e/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.115_0_2.windows.Task_2_test_suite" name="Count number of doctors" time="0.037">
+      <system-out><![CDATA[
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+COMMAND: POST /session/2a411a02-69ab-4519-b665-79bf808f339a/elements - {"using":"css selector","value":"div[class=\"specialist-display\"] div[class=\"e-cards specialist-item\"]"}
+RESULT: {"using":"css selector","value":"div[class=\"specialist-display\"] div[class=\"e-cards specialist-item\"]"}
+COMMAND: DELETE /session/2a411a02-69ab-4519-b665-79bf808f339a - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

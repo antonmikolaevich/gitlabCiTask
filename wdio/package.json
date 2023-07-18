@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "generateReport": "allure generate allure-results && allure open"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,7 @@
     "@wdio/mocha-framework": "^8.10.2",
     "@wdio/spec-reporter": "^8.10.2",
     "chromedriver": "^113.0.0",
-    "geckodriver": "^4.0.2",
+    "geckodriver": "^4.0.5",
     "wdio-chromedriver-service": "^8.1.1",
     "wdio-geckodriver-service": "^5.0.1"
   },

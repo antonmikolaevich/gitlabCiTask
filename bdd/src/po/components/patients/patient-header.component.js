@@ -4,7 +4,7 @@ const BaseComponent = require('../common/base.component');
 
 class PatientHeaderComponent extends BaseComponent {
   constructor() {
-    super('div[class="patient-operations"]');
+    super('div[class="patients-detail-wrapper"]');
   }
 
   get addNewPatientBtn() {

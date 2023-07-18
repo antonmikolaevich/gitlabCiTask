@@ -29,6 +29,7 @@ describe('Task 3 test suite', () => {
   it('Clear cookies', async () => {
     await browser.url('https://dpm.by/auth/');
     await $('//div[@class="window__block"]/input[@name="USER_LOGIN"]').setValue('3388100');
+    await browser.scroll(0, 200);
     await $('//div[@class="window__block"]/input[@name="USER_PASSWORD"]').setValue('haVv5pen');
     await $('//*[@name="AUTH_ACTION"]').click();
     const accInfo = await $('//*[@class="persmainGrid"]');
