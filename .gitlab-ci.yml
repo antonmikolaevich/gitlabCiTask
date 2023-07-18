@@ -60,6 +60,10 @@ bdd:
   script:
     - npm install mocha
     - npm install mochawesome --save-dev
-    - npm --prefix bdd install webdriverio
-    - npm --prefix bdd install chromedriver
+    - npm --prefix bdd install wdio
     - npm --prefix bdd run wdio
+  # artifacts:
+  #   paths:
+  #     - bdd/mochawesome-report/  
+  #   expire_in: 3 days
+  #   when: always    
