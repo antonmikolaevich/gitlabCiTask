@@ -4,6 +4,7 @@ Feature: Patients
 Scenario Outline: Create a new patient
   When I open "Dashboard" page
   And I click "Patients" link from the side menu
+  And I wait for Add New Patient button to be displayed
   And I click add new patient button from list header
   And I write "<name>" in "Name" patient field
   And I click on "<genderInput>" gender

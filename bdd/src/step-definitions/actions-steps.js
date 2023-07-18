@@ -12,6 +12,14 @@ When('I click {string} link from the side menu', function(link) {
   return page('dashboard').sideMenu.item(link).click();
 });
 
+When('I wait for Add New Doctor button to be displayed', function() {
+  return page('doctors').doctorListHeader.addNewDoctorBtn.waitForDisplayed({timeout: 6000});
+});
+
+When('I wait for Add New Patient button to be displayed', function() {
+  return page('patients').patientListHeader.addNewPatientBtn.waitForDisplayed({timeout: 6000});
+});
+
 When('I click add new doctor button from list header', function() {
   return page('doctors').doctorListHeader.addNewDoctorBtn.click();
 });

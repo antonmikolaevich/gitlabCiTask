@@ -12,8 +12,9 @@ Scenario: It should be possible to open a modal window
 
 @4
 Scenario: Show an error for an empty doctor email
-  When I open "Dashboard" page
+  # When I open "Dashboard" page
   And I click "Doctors" link from the side menu
+  And I wait for Add New Doctor button to be displayed
   And I click add new doctor button from list header
   And I write "John Doe" in "Name" field
   And I click "save" button in modal window
