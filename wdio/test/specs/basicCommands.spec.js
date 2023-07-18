@@ -30,6 +30,7 @@ describe('Task 2 test suite', () => {
     await browser.customClick(addDoctor);
     // await $('//button[text()="Add New Doctor"]').click();
     await $('input[name="Email"]').setValue('test@');
+    await $('.button-container button.e-primary').click();
     const emailError = await $('label#Email-info');
     await expect(emailError).toBeDisplayed();
     await $('input[name="Email"]').addValue('gmail.com');
